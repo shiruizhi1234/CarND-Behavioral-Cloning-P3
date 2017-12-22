@@ -91,23 +91,24 @@ At the end of the process, the vehicle is able to drive autonomously around the 
 
 #### 2. Final Model Architecture
 
-The final model architecture (model.py) consisted of a convolution neural network with the following layers and layer sizes
+The final model architecture (model.py) consisted of a convolution neural network with the following layers and layer sizes:
+
 | Layer                 |     Description                               | 
 |:---------------------:|:---------------------------------------------:| 
 | Input                 | 160x320x3  image                            | 
-| Cropping              | Cut the top 60 and bottom 25 pixels|
+| Cropping              | Cut the top 60 and bottom 25 pixels       |
 | Lambda Normalization  |         Normalize the  input             |
-| Convolution 5x5       | 2x2 stride, valid padding, activation relu, output 24 filters|
-| Convolution 5x5       | 2x2 stride, valid padding, activation relu, output 36 filters|
-| Convolution 5x5       | 2x2 stride, valid padding, activation relu, output 48 filters|
+| Convolution 5x5     | 2x2 stride, valid padding, activation relu, output 24|
+| Convolution 5x5     | 2x2 stride, valid padding, activation relu, output 36|
+| Convolution 5x5   | 2x2 stride, valid padding, activation relu, output 48|
 | Batch Normalization   |                                                 |
-| Convolution 3x3       | 1x1 stride, valid padding, activation relu, output 64 filters|
-| Convolution 3x3       | 1x1 stride, valid padding, activation relu, output 64 filters|
-| Convolution 1x1       | 1x1 stride, valid padding, activation relu, output 500 filters|
+| Convolution 3x3      | 1x1 stride, valid padding, activation relu, output 64|
+| Convolution 3x3    | 1x1 stride, valid padding, activation relu, output 64 |
+| Convolution 1x1    | 1x1 stride, valid padding, activation relu, output 500 |
 | flatten               |                                           |
 | Dropout               |   prob 0.2                                    |
 | Fully connected       |                                               |
-| Dropout               |   prob 0.4                                      |
+| Dropout               |   prob 0.4                                    |
 | Fully connected       |                                               |
 
 
