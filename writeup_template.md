@@ -95,16 +95,16 @@ The final model architecture (model.py) consisted of a convolution neural networ
 | Layer                 |     Description                               | 
 |:---------------------:|:---------------------------------------------:| 
 | Input                 | 160x320x3  image                            | 
-| Cropping | Cut the top 60 and bottom 25 pixels|
-| Lambda Normalization|Normalize the input                                               |
+| Cropping              | Cut the top 60 and bottom 25 pixels|
+| Lambda Normalization  |         Normalize the  input             |
 | Convolution 5x5       | 2x2 stride, valid padding, activation relu, output 24 filters|
 | Convolution 5x5       | 2x2 stride, valid padding, activation relu, output 36 filters|
 | Convolution 5x5       | 2x2 stride, valid padding, activation relu, output 48 filters|
-| Batch Normalization                  |
+| Batch Normalization   |                                                 |
 | Convolution 3x3       | 1x1 stride, valid padding, activation relu, output 64 filters|
 | Convolution 3x3       | 1x1 stride, valid padding, activation relu, output 64 filters|
 | Convolution 1x1       | 1x1 stride, valid padding, activation relu, output 500 filters|
-| flatten               |   
+| flatten               |                                           |
 | Dropout               |   prob 0.2                                    |
 | Fully connected       |                                               |
 | Dropout               |   prob 0.4                                      |
